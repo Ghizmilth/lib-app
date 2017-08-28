@@ -19,5 +19,6 @@ Rails.application.routes.draw do
 
 #library_users joined table
   get '/users/:user_id/libraries', to: 'library_users#index', as: 'user_libraries'
+  post '/libraries/:library_id/users', to: 'library_user#create', as: 'library_users'
 
 end
